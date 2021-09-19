@@ -1,0 +1,26 @@
+server:
+  port: 1051
+
+spring:
+  main:
+    banner-mode: off
+  kafka:
+    url: 127.0.0.1:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+mqtt:
+  broker:
+    ip: localhost
+    port: 1883
+
+  client:
+    topic:
+      client:
+        first: first-telemetry
+        second: second-telemetry
+
+kafka:
+  producer:
+    topic: commonMessage

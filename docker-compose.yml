@@ -1,0 +1,37 @@
+version: '3.3'
+
+services:
+  mosquitto:
+    image: eclipse-mosquitto:1.5.5
+    hostname: mosquitto
+    container_name: mosquitto
+    ports:
+      - "1883:1883"
+  mongo-db:
+    image: mongo:4.0.5
+    hostname: mongo-db
+    container_name: mongo-db
+    tty: true
+    ports:
+      - "27017:27017"
+    command: --bind_ip_all --smallfiles
+    environment:
+      - MONGO_INITDB_DATABASE:telemetrydata
+      - MONGO_INITDB_USERNAME:mongouser
+      - MONGO_INITDB_PASSWORD:mongouser@123
+    
+    volumes:
+      - ./mongo-db:/data
+  mongoclient:
+    image: mongoclient/mongoclient:2.2.0
+    container_name: mongoclient
+    hostname: mongoclient
+    depends_on:
+      - mongo-db
+    ports:
+      - 3000:3000
+    environment:
+      MONGO_URL: "mongodb://mongo-db:27017"
+      PORT: 3000
+    expose:
+      - "3000"
