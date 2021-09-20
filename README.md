@@ -2,7 +2,7 @@
 
  - **Kafka-connect-utilities** directory contains all the necessary libary and configuration for Sink the incoming data to MongoDB. Refer the README file for configuration set up
 
-- **Simulator** directory contains two Python based Mqtt Client which keep sending data to the broker at every 5 seconds intervals. These two client will publish data on their respective topic 
+- **Simulator** directory contains two **Python** based Mqtt Client which keep sending data to the broker at every 5 seconds intervals. These two client will publish data on their respective topic 
 
 - **docker-compose.yml** contains mongodb and mongo client 
 
