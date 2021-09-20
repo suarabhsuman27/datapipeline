@@ -1,4 +1,4 @@
-# datapipeline
+# Mqtt, Kafka, Kafka Connect and  MongoDB based datapipeline
 
  - **Kafka-connect-utilities** directory contains all the necessary libary and configuration for Sink the incoming data to MongoDB. Refer the README file for configuration set up
 
@@ -14,5 +14,6 @@
 **System Architecture**
 
 
-![image](https://user-images.githubusercontent.com/91028976/133956765-9fee7c9c-16b2-4da5-9b03-71462cac0d53.png)
+![image](https://user-images.githubusercontent.com/91028976/133956873-a2bbf976-06d9-4f07-bddd-1f0ee9b104a5.png)
+
 
