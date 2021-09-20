@@ -14,4 +14,5 @@
 **System Architecture**
 
 
-![image](https://user-images.githubusercontent.com/91028976/133956659-b8c90118-651a-4140-a2b4-154491fa33f0.png)
+![image](https://user-images.githubusercontent.com/91028976/133956765-9fee7c9c-16b2-4da5-9b03-71462cac0d53.png)
+
